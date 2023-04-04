@@ -31,4 +31,10 @@ function onInputSubmit(event) {
 
   console.log(`Login: ${login}, Password: ${password}`);
   event.currentTarget.reset();
+
+  if (!refs.loginEl.value || !refs.passwordEl.value) {
+    alert("Всі поля повинні бути заповнені!");
+    return;
+  }
 }
+

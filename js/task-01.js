@@ -14,11 +14,11 @@
 
 const categories = document.querySelector("#categories");
 const navListEls = document.querySelectorAll("li.item");
-console.log(`Кількість елементів li.item: ${navListEls.length}`);
+console.log(`Number of categories: ${navListEls.length}`);
 
-navListEls .forEach((el) => {
+navListEls.forEach((el) => {
   const title = el.querySelector("h2").textContent;
   const count = el.querySelectorAll("li").length;
 
-  console.log(`Number of categories: ${title} /  Elements: ${count}`);
+  console.log(`Category: ${title} /  Elements: ${count}`);
 });
