@@ -37,4 +37,3 @@ function onInputSubmit(event) {
     return;
   }
 }
-
